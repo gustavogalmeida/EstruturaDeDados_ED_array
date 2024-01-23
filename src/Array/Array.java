@@ -22,6 +22,14 @@ public class Array {
             throw new Exception("The Array is full. Cannot add new elements");
         }
     }
+    public boolean addV3(String element){
+        if(this.size < this.elements.length){
+            elements[this.size] = element;
+            this.size++;
+            return true;
+        }
+        return false;
+    }
     public void setSize(int size) {
         this.size = size;
     }
