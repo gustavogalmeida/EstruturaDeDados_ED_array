@@ -7,7 +7,7 @@ public class Array {
         this.elements = new String[length];
     }
     public void addV1(String element){
-        for (int i = 0; i <= this.elements.length; i++){
+        for (int i = 0; i <= this.elements.length -1; i++){
             if (elements[i] == null) {
                 elements[i] = element;
                 break;
