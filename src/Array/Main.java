@@ -2,9 +2,8 @@ package Array;
 
 public class Main {
     public static void main(String[] args) {
-        Array array = new Array(2);
-        Array array2 = new Array(2);
-        array.setSize(0);
+        Array array = new Array(10);
+        Array array2 = new Array(10);
 
         //option1
         try {
@@ -18,6 +17,7 @@ public class Main {
         array2.addV3("Test 2");
         array2.addV3("Test 3");
         array2.addV3("Test 4");
-
+        System.out.println(array2.getSize());
+        System.out.println(array2);
     }
 }

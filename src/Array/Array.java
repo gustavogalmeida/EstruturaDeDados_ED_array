@@ -1,7 +1,9 @@
 package Array;
 
+import java.util.Arrays;
+
 public class Array {
-    private String[] elements;
+    private final String[] elements;
     private int size;
     public Array(int length){
         this.elements = new String[length];
@@ -30,7 +32,24 @@ public class Array {
         }
         return false;
     }
-    public void setSize(int size) {
-        this.size = size;
+    public int getSize (){
+        return this.size;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+        str.append("[");
+
+        for (int i=0; i<this.size-1; i++){
+            str.append(this.elements[i]);
+            str.append(", ");
+        }
+        if (size > 0){
+            str.append(this.elements[this.size-1]);
+        }
+        str.append("]");
+
+        return str.toString();
     }
 }
